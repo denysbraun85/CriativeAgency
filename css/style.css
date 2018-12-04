@@ -1,0 +1,345 @@
+/* Fonts */
+@font-face {
+  font-family: 'Muli-reg';
+  src: url('../fonts/Muli-Regular.eot');
+  src: url('../fonts/Muli-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Muli-Regular.woff2') format('woff2'), url('../fonts/Muli-Regular.woff') format('woff'), url('../fonts/Muli-Regular.ttf') format('truetype'), url('../fonts/Muli-Regular.svg#Muli-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Muli-bold';
+  src: url('../fonts/Muli-Bold.eot');
+  src: url('../fonts/Muli-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/Muli-Bold.woff2') format('woff2'), url('../fonts/Muli-Bold.woff') format('woff'), url('../fonts/Muli-Bold.ttf') format('truetype'), url('../fonts/Muli-Bold.svg#Muli-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Colors */
+/* Basic settings */
+html {
+  font-size: 10px;
+}
+html body {
+  font-family: 'Muli-reg', sans-serif;
+}
+.slick-slide {
+  outline: none;
+}
+/* Typography */
+section {
+  padding: 8rem 0;
+}
+.button {
+  border: 0.2rem solid #ffffff;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  padding: 1rem 2rem;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: transparent;
+  color: #b3b3b3;
+  border-color: #b3b3b3;
+}
+.button:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+/* Main */
+.main {
+  background: url("../img/main-bg.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+  padding-bottom: 10rem;
+  position: relative;
+  z-index: 1;
+  /* Search form */
+  /* Text-main */
+}
+.main .bg-iron-man {
+  position: absolute;
+  left: 9%;
+  top: 29%;
+  width: 60rem;
+  max-width: 100%;
+  z-index: -1;
+}
+.main .logo-container:hover {
+  cursor: pointer;
+}
+.main .logo-container .logo-text {
+  font-size: 5.3rem;
+  color: #eeb501;
+  line-height: 5.3rem;
+  margin-bottom: 0;
+  font-family: 'Muli-bold', sans-serif;
+}
+.main .logo-container .logo-text b {
+  color: #ffffff;
+}
+.main .logo-container .tag-text {
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+  color: #ffffff;
+  font-family: 'Muli-bold', sans-serif;
+  letter-spacing: 0.8rem;
+}
+.main .menu {
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: 'Muli-bold', sans-serif;
+}
+.main .menu a {
+  color: #ffffff;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.main .menu a:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  color: #b3b3b3;
+}
+.main .collapse-menu-mobile {
+  display: none;
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.main .collapse-menu-mobile:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.main .collapse-menu-mobile span {
+  width: 2.5rem;
+  height: 0.4rem;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  top: 45%;
+  margin-bottom: -0.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main .collapse-menu-mobile span:before {
+  content: '';
+  width: 2.5rem;
+  height: 0.4rem;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  top: 0.7rem;
+}
+.main .collapse-menu-mobile span:after {
+  content: '';
+  width: 2.5rem;
+  height: 0.4rem;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 5rem;
+  bottom: 0.7rem;
+}
+.main form input[type=text] {
+  width: 3rem;
+  height: 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.2rem;
+  color: #ffffff;
+  line-height: 1.2rem;
+  background: url('../img/search.png') no-repeat 0.8rem 0.5rem;
+  background-size: 2rem;
+  padding: 1.5rem 2rem 1.5rem 4rem;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  cursor: pointer;
+  border: 0.2rem solid rgba(0, 0, 0, 0);
+}
+.main form input[type=text]:focus {
+  width: 100%;
+  cursor: auto;
+  border-radius: 5rem;
+  border: 0.2rem solid #ffffff;
+  outline: none;
+  background-color: #2e2e2e;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.main .main-text-container {
+  margin-top: 8rem;
+  z-index: 2;
+}
+.main .main-text-container .text-main {
+  font-size: 6rem;
+  line-height: 6rem;
+  font-family: 'Muli-bold', sans-serif;
+  text-align: right;
+  color: #ffffff;
+}
+.main .main-text-container .text-main strong {
+  color: #eeb501;
+  text-transform: uppercase;
+  font-size: 12rem;
+  line-height: 12rem;
+}
+.main .main-text-container .text-inform {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 3rem;
+  text-align: right;
+  max-width: 50rem;
+  width: 100%;
+  margin-left: auto;
+}
+.main .button {
+  display: block;
+  margin-left: auto;
+  margin-top: 5rem;
+}
+/* Media */
+@media (max-width: 1200px) {
+  /* Main */
+  .main .menu {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+  .main .bg-iron-man {
+    position: absolute;
+    left: 9%;
+    top: 21%;
+    width: 40rem;
+    max-width: 100%;
+    z-index: -1;
+  }
+}
+@media (max-width: 992px) {
+  /* Main */
+  .main .logo-container .logo-text {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .main .logo-container .tag-text {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+    letter-spacing: 0.7rem;
+  }
+  .main .menu {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .main form input[type=text] {
+    width: 2rem;
+    height: 2rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    background: url(../img/search.png) no-repeat 0.3rem 0.2rem;
+    background-size: 1.2rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0);
+    padding: 0.5rem 2rem;
+  }
+  .main form input[type=text]:focus {
+    border: 0.1rem solid #ffffff;
+  }
+}
+@media (max-width: 768px) {
+  /* Main */
+  .main .main-text-container .text-main {
+    text-align: center;
+  }
+  .main .main-text-container .text-inform {
+    text-align: center;
+    margin: auto;
+  }
+  .main .bg-iron-man {
+    display: none;
+  }
+  .main .button {
+    margin-right: auto;
+  }
+  .main form {
+    display: none;
+  }
+  .main .wrapper {
+    min-height: 14rem;
+    height: 100%;
+  }
+  .main .wrapper .menu {
+    display: none;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .main .wrapper .menu a {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 0.1rem  transparent;
+    border-radius: 0.2rem;
+    margin-bottom: 0.1rem;
+  }
+  .main .wrapper .menu a:hover {
+    width: 100%;
+    background-color: #2e2e2e;
+    text-align: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    border: 0.1rem solid #ffffff;
+    border-radius: 0.5rem;
+  }
+  .main .wrapper .menu.active-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main .collapse-menu-mobile {
+    display: block;
+  }
+  .main .collapse-menu-mobile.active span {
+    background-color: transparent;
+  }
+  .main .collapse-menu-mobile.active span:before {
+    -webkit-transform: rotate(-45deg) translateY(0.2rem);
+            transform: rotate(-45deg) translateY(0.2rem);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .main .collapse-menu-mobile.active span:after {
+    -webkit-transform: rotate(45deg) translateY(-0.3rem);
+            transform: rotate(45deg) translateY(-0.3rem);
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  .main .main-text-container {
+    margin-top: 4rem;
+  }
+  .main .main-text-container .text-main {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+  .main .main-text-container .text-main strong {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .main .main-text-container .text-inform {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 576px) {
+  /* Main */
+}
