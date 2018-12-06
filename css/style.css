@@ -286,6 +286,40 @@ img {
   line-height: 1.6rem;
   text-align: center;
 }
+/* Section-portfolio */
+.section-portfolio {
+  background: url("../img/portfolio-bg.jpg") no-repeat;
+  background-size: cover;
+}
+.section-portfolio .head-container {
+  text-align: center;
+}
+.section-portfolio .head-container .text-italic {
+  font-size: 2.9rem;
+  line-height: 3.9rem;
+  font-style: italic;
+  color: #ffffff;
+}
+.section-portfolio .head-container .text-head {
+  color: #ffffff;
+  font-size: 4.3rem;
+  line-height: 5.3rem;
+  font-family: 'Muli-bold', sans-serif;
+}
+.section-portfolio .head-container .text-inform {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 3rem;
+  max-width: 50%;
+  margin: auto auto 6rem;
+}
+.section-portfolio .button {
+  display: block;
+  margin: 4rem auto auto;
+}
+.section-portfolio .typewriter-container {
+  margin-top: 1rem;
+}
 /* Media */
 @media (max-width: 1200px) {
   /* Main */
@@ -300,6 +334,10 @@ img {
     width: 40rem;
     max-width: 100%;
     z-index: -1;
+  }
+  /* section-portfolio */
+  .section-portfolio .typewriter-container {
+    margin-top: 1.2rem;
   }
 }
 @media (max-width: 992px) {
@@ -330,9 +368,17 @@ img {
   .main form input[type=text]:focus {
     border: 0.1rem solid #ffffff;
   }
+  /* Section-skills */
   .section-skills .table-skills {
     left: 17rem;
     width: 50%;
+  }
+  /* Section-portfolio */
+  .section-portfolio .head-container .text-inform {
+    max-width: 100%;
+  }
+  .section-portfolio .typewriter-container {
+    margin-top: 1.4rem;
   }
 }
 @media (max-width: 768px) {
@@ -426,6 +472,7 @@ img {
   .main .main-text-container .text-inform {
     font-size: 1.5rem;
   }
+  /* Section-skills */
   .section-skills .container-name {
     padding-top: 0;
     margin-bottom: 4rem;
@@ -443,13 +490,22 @@ img {
   .section-skills .pattern-skills {
     width: 25%;
   }
+  /* Section-portfolio */
+  .section-portfolio .typewriter-container {
+    margin-top: 1.5rem;
+  }
 }
 @media (max-width: 576px) {
   /* Main */
   .main .logo-container .tag-text {
     letter-spacing: 0.6rem;
   }
+  /* Section-skills */
   .section-skills .table-skills {
     display: none;
+  }
+  /* Section-portfolio */
+  .section-portfolio .typewriter-container {
+    margin-top: 1.7rem;
   }
 }
