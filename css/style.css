@@ -320,6 +320,144 @@ img {
 .section-portfolio .typewriter-container {
   margin-top: 1rem;
 }
+/* Section team */
+.section-team {
+  background: url("../img/bg-team.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+  /* end */
+}
+.section-team .pattern-team {
+  position: absolute;
+  top: 20rem;
+  left: 0;
+  z-index: -1;
+  width: 7%;
+}
+.section-team .head-container {
+  text-align: center;
+}
+.section-team .head-container .text-italic {
+  font-size: 2.9rem;
+  line-height: 3.9rem;
+  font-style: italic;
+  color: #1e0303;
+}
+.section-team .head-container .text-head {
+  color: #1e0303;
+  font-size: 4.3rem;
+  line-height: 5.3rem;
+  font-family: 'Muli-bold', sans-serif;
+}
+.section-team .photo-container {
+  margin-top: 4.5rem;
+  text-align: center;
+  z-index: 3;
+  /* Cards */
+}
+.section-team .photo-container .cards {
+  position: relative;
+  min-width: 4rem;
+  width: 100%;
+  min-height: 37rem;
+  height: 100%;
+  background-color: #cccccc;
+  overflow: hidden;
+  border-radius: 1rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.section-team .photo-container .cards:hover .img-box {
+  opacity: 0.5;
+}
+.section-team .photo-container .cards:hover .content {
+  bottom: 0;
+}
+.section-team .photo-container .cards:hover {
+  -webkit-transform: translateY(-2rem);
+          transform: translateY(-2rem);
+  -webkit-box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.2);
+}
+.section-team .photo-container .cards .img-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.section-team .photo-container .cards .img-box img {
+  width: 100%;
+}
+.section-team .photo-container .cards .content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  bottom: -100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+}
+.section-team .photo-container .cards .content .designer-name {
+  font-size: 2.9rem;
+  line-height: 2.9rem;
+  margin-top: 2rem;
+  color: #ffffff;
+  font-family: 'Muli-bold', sans-serif;
+}
+.section-team .photo-container .cards .content .designer-work {
+  font-size: 2rem;
+  color: #eeb501;
+}
+.section-team .photo-container .cards .content .designer-info {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-align: center;
+}
+.section-team .photo-container .cards .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem auto 0;
+  padding: 0;
+}
+.section-team .photo-container .cards .content ul li {
+  list-style: none;
+}
+.section-team .photo-container .cards .content ul li a {
+  color: #ffffff;
+  padding: 0 1rem;
+  font-size: 2rem;
+}
+.section-team .photo-container .one .content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#c2000b), to(transparent));
+  background: linear-gradient(0deg, #c2000b, transparent);
+}
+.section-team .photo-container .two .content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8012a5), to(transparent));
+  background: linear-gradient(0deg, #8012a5, transparent);
+}
+.section-team .photo-container .three .content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#009627), to(transparent));
+  background: linear-gradient(0deg, #009627, transparent);
+}
+.section-team .photo-container .four .content {
+  background: -webkit-gradient(linear, left bottom, left top, from(#0034ea), to(transparent));
+  background: linear-gradient(0deg, #0034ea, transparent);
+}
 /* Media */
 @media (max-width: 1200px) {
   /* Main */
@@ -338,6 +476,20 @@ img {
   /* section-portfolio */
   .section-portfolio .typewriter-container {
     margin-top: 1.2rem;
+  }
+  /* Section team */
+  .section-team .photo-container .cards {
+    min-height: 30.5rem;
+  }
+  .section-team .photo-container .cards .content .designer-name {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+  .section-team .photo-container .cards .content .designer-work {
+    font-size: 1.5rem;
+  }
+  .section-team .photo-container .cards .content .designer-info {
+    font-size: 1rem;
   }
 }
 @media (max-width: 992px) {
@@ -379,6 +531,13 @@ img {
   }
   .section-portfolio .typewriter-container {
     margin-top: 1.4rem;
+  }
+  /* Section team */
+  .section-team .photo-container .cards {
+    min-height: 21.5rem;
+  }
+  .section-team .photo-container .cards .content {
+    height: 90%;
   }
 }
 @media (max-width: 768px) {
@@ -494,6 +653,26 @@ img {
   .section-portfolio .typewriter-container {
     margin-top: 1.5rem;
   }
+  /* Section team */
+  .section-team .photo-container .cards {
+    min-height: 15rem;
+  }
+  .section-team .photo-container .cards .content {
+    height: 80%;
+  }
+  .section-team .photo-container .cards .content .designer-name {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+  }
+  .section-team .photo-container .cards .content .designer-work {
+    font-size: 1.2rem;
+  }
+  .section-team .photo-container .cards .content .designer-info {
+    display: none;
+  }
+  .section-team .photo-container .cards .content ul li a {
+    font-size: 1.2rem;
+  }
 }
 @media (max-width: 576px) {
   /* Main */
@@ -507,5 +686,32 @@ img {
   /* Section-portfolio */
   .section-portfolio .typewriter-container {
     margin-top: 1.7rem;
+  }
+  /* Section-team */
+  .section-team .pattern-team {
+    display: none;
+  }
+  /* Section team */
+  .section-team .photo-container .cards {
+    min-height: 24rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section-team .photo-container .cards .content .designer-name {
+    font-size: 2.2rem;
+    line-height: 2.2rem;
+  }
+  .section-team .photo-container .cards .content .designer-work {
+    font-size: 1.5rem;
+  }
+  .section-team .photo-container .cards .content .designer-info {
+    font-size: 1rem;
+  }
+  .section-team .margin-bottom-2 {
+    margin-bottom: 3rem;
+  }
+  .pattern-team {
+    display: none;
   }
 }
