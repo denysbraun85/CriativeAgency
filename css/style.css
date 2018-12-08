@@ -458,6 +458,60 @@ img {
   background: -webkit-gradient(linear, left bottom, left top, from(#0034ea), to(transparent));
   background: linear-gradient(0deg, #0034ea, transparent);
 }
+/* Section feedback */
+.section-feedback {
+  background: url("../img/bg-feedback.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.section-feedback .head-container {
+  text-align: center;
+}
+.section-feedback .head-container .text-italic {
+  font-size: 2.9rem;
+  line-height: 3.9rem;
+  font-style: italic;
+  color: #ffffff;
+}
+.section-feedback .head-container .text-head {
+  color: #ffffff;
+  font-size: 4.3rem;
+  line-height: 5.3rem;
+  font-family: 'Muli-bold', sans-serif;
+}
+.section-feedback .feedback-container {
+  text-align: center;
+}
+.section-feedback .feedback-container p img {
+  margin: auto;
+}
+.section-feedback .feedback-container .text-inform {
+  color: #ffffff;
+  font-size: 2rem;
+  line-height: 3rem;
+  max-width: 70%;
+  margin: auto auto 3rem;
+}
+.section-feedback .feedback-container .designer-name {
+  font-size: 2.9rem;
+  line-height: 2.9rem;
+  margin-top: 2rem;
+  color: #eeb501;
+  font-family: 'Muli-bold', sans-serif;
+}
+.section-feedback .feedback-container .designer-work {
+  font-size: 2rem;
+  color: #ffffff;
+}
+.section-feedback .hook-left {
+  position: absolute;
+  top: 0;
+}
+.section-feedback .hook-right {
+  position: absolute;
+  top: 5rem;
+  margin-left: 105rem;
+}
 /* Media */
 @media (max-width: 1200px) {
   /* Main */
@@ -490,6 +544,12 @@ img {
   }
   .section-team .photo-container .cards .content .designer-info {
     font-size: 1rem;
+  }
+  /* Section feedback */
+  .section-feedback .hook-right {
+    position: absolute;
+    top: 5rem;
+    margin-left: 87rem;
   }
 }
 @media (max-width: 992px) {
@@ -538,6 +598,12 @@ img {
   }
   .section-team .photo-container .cards .content {
     height: 90%;
+  }
+  /* Section feedback */
+  .section-feedback .hook-right {
+    position: absolute;
+    top: 5rem;
+    margin-left: 63rem;
   }
 }
 @media (max-width: 768px) {
@@ -673,6 +739,23 @@ img {
   .section-team .photo-container .cards .content ul li a {
     font-size: 1.2rem;
   }
+  /* Section feedback */
+  .section-feedback .feedback-container {
+    margin-top: 2rem;
+  }
+  .section-feedback .feedback-container .text-inform {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  .section-feedback .hook-left {
+    width: 4rem;
+  }
+  .section-feedback .hook-right {
+    position: absolute;
+    top: 5rem;
+    margin-left: 45rem;
+    width: 4rem;
+  }
 }
 @media (max-width: 576px) {
   /* Main */
@@ -712,6 +795,20 @@ img {
     margin-bottom: 3rem;
   }
   .pattern-team {
+    display: none;
+  }
+  /* Section feedback */
+  .section-feedback .feedback-container {
+    margin-top: 2rem;
+  }
+  .section-feedback .feedback-container .text-inform {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+  .section-feedback .hook-left {
+    display: none;
+  }
+  .section-feedback .hook-right {
     display: none;
   }
 }
