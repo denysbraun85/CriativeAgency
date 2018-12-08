@@ -760,7 +760,7 @@ img {
 @media (max-width: 576px) {
   /* Main */
   .main .logo-container .tag-text {
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.5rem;
   }
   /* Section-skills */
   .section-skills .table-skills {
