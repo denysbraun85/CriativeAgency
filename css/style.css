@@ -52,6 +52,72 @@ section {
 img {
   max-width: 100%;
 }
+/* New button */
+.new-button-container {
+  max-width: 19.5rem;
+  margin-left: auto;
+  text-align: center;
+}
+.new-button-container .new-button {
+  position: relative;
+  text-align: right;
+  line-height: 6rem;
+  color: #ffffff;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, right top, from(#0511ff), color-stop(#ff2232), color-stop(#fff63a), color-stop(#2bff1f), to(#0511ff));
+  background: linear-gradient(90deg, #0511ff, #ff2232, #fff63a, #2bff1f, #0511ff);
+  padding: 1rem 3rem;
+  background-size: 400%;
+  border-radius: 3rem;
+  z-index: 1;
+}
+.new-button-container .new-button:hover {
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+.new-button-container .new-button:before {
+  content: '';
+  position: absolute;
+  top: -0.5rem;
+  left: -0.5rem;
+  right: -0.5rem;
+  bottom: -0.5rem;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#0511ff), color-stop(#ff2232), color-stop(#fff63a), to(#2bff1f));
+  background: linear-gradient(90deg, #0511ff, #ff2232, #fff63a, #2bff1f);
+  background-size: 400%;
+  border-radius: 4rem;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.new-button-container .new-button:hover:before {
+  -webkit-filter: blur(2rem);
+          filter: blur(2rem);
+  opacity: 1;
+  -webkit-animation: animate 10s linear infinite;
+          animation: animate 10s linear infinite;
+}
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+@keyframes animate {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
 /* Main */
 .main {
   background: url("../img/main-bg.jpg") no-repeat;

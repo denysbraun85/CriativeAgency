@@ -14,3 +14,10 @@ $(document).ready(function(){
         slidesToScroll: 1
 });
 });
+
+/* Cards hover effect */
+$('.cards').tilt({
+    maxTilt: 10,
+    glare: true,
+    maxGlare: .4
+});
