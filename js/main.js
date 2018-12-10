@@ -21,3 +21,14 @@ $('.cards').tilt({
     glare: true,
     maxGlare: .4
 });
+
+/* Clock */
+$('#clock').countdown('2018/12/16', function (event) {
+    $(this).html(event.strftime(''
+        + '<div><span>%w</span><span>Weeks</span></div>'
+        + '<div><span>%d</span><span>Days</span></div>'
+        + '<div><span>%H</span><span>Hr</span></div>'
+        + '<div><span>%M</span><span>Min</span></div>'
+        + '<div><span>%S</span><span>Sec</span></div>'
+    ));
+});
