@@ -32,3 +32,23 @@ $('#clock').countdown('2018/12/16', function (event) {
         + '<div><span>%S</span><span>Sec</span></div>'
     ));
 });
+
+/* Load progress */
+$(document).ready(function () {
+   NProgress.start();
+    setTimeout(function () {
+       NProgress.set(0.4);
+        }, 1000);
+    setTimeout(function () {
+        NProgress.set(0.6);
+    }, 2000);
+    setTimeout(function () {
+        NProgress.set(0.8);
+    }, 3000);
+    setTimeout(function () {
+        NProgress.set(1.0);
+        NProgress.done();
+    }, 4000);
+});
+
+
