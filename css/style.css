@@ -1202,15 +1202,24 @@ img {
   /* Section countdown */
   /* Section clients */
   .section-clients .container-brand {
-    width: auto;
-    height: 15rem;
+    width: 15rem;
+    height: 10rem;
     margin-left: auto;
     margin-right: auto;
   }
   .section-clients .container-brand img {
-    max-width: 100%;
+    max-width: 50%;
+  }
+  .section-clients .br-none {
+    display: none;
   }
   /* Section footer */
+  .section-footer .map-container {
+    padding-bottom: 50%;
+  }
+  .section-footer .form-container input {
+    padding: 1rem;
+  }
   .section-footer ul {
     max-width: 65%;
   }
