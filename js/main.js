@@ -51,4 +51,8 @@ $(document).ready(function () {
     }, 4000);
 });
 
+/* Stop the default action */
+$("a").click(function(event){
+    event.preventDefault();
+});
 
