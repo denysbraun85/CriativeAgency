@@ -57,17 +57,3 @@ $("a").click(function(event){
 });
 
 /* Scroll To Top Button  */
-
-// ===== Scroll to Top ====
-// $(window).scroll(function() {
-//     if ($(this).scrollTop()>= 500) {        // If page is scrolled more than 500px
-//         $('#btn-top').fadeIn(200);    // Fade in the arrow
-//     } else {
-//         $('#btn-top').fadeOut(200);   // Else fade out the arrow
-//     }
-// });
-// $('#btn-top').click(function() {      // When arrow is clicked
-//     $('body,html').animate({
-//         scrollTop : 0                       // Scroll to top of body
-//     }, 500);
-// });
