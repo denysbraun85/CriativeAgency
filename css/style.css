@@ -1251,8 +1251,12 @@ img {
 }
 @media (max-width: 576px) {
   /* Main */
+  .main {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
   .main .main-text-container {
-    margin-top: 2rem;
+    margin-top: 0;
   }
   .main .logo-container .tag-text {
     letter-spacing: 0.5rem;
