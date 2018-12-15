@@ -60,8 +60,7 @@ $("a").click(function(event){
 
 // ===== Scroll to Top ====
 $(window).scroll(function() {
-    // noinspection JSValidateTypes
-    if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 500px
+    if ($(this).scrollTop()>= 500) {        // If page is scrolled more than 500px
         $('#btn-top').fadeIn(200);    // Fade in the arrow
     } else {
         $('#btn-top').fadeOut(200);   // Else fade out the arrow
