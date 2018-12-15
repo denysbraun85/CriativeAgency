@@ -195,7 +195,6 @@ img {
 }
 /* Main */
 .main {
-  height: 100vh;
   background: url("../img/main-bg.jpg") no-repeat;
   background-size: cover;
   padding-top: 3rem;
@@ -1173,7 +1172,7 @@ img {
     font-size: 1.5rem;
   }
   .main .new-button-container {
-    margin: 10rem auto auto;
+    margin: 5rem auto auto;
   }
   /* Section-skills */
   .section-skills .container-name {
@@ -1252,6 +1251,9 @@ img {
 }
 @media (max-width: 576px) {
   /* Main */
+  .main .main-text-container {
+    margin-top: 2rem;
+  }
   .main .logo-container .tag-text {
     letter-spacing: 0.5rem;
   }
