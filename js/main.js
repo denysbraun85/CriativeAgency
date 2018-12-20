@@ -23,7 +23,7 @@ $('.cards').tilt({
 });
 
 /* Clock */
-$('#clock').countdown('2018/12/16', function (event) {
+$('#clock').countdown('2018/12/31', function (event) {
     $(this).html(event.strftime(''
         + '<div><span>%w</span><span>Weeks</span></div>'
         + '<div><span>%d</span><span>Days</span></div>'
@@ -57,3 +57,18 @@ $("a").click(function(event){
 });
 
 /* Scroll To Top Button  */
+$(window).scroll(function() {
+    if ($(this).scrollTop()>= 500) {        // If page is scrolled more than 500px
+        $('#btn-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#btn-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#btn-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+
+/* Animation */
+new WOW().init();

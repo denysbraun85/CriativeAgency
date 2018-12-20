@@ -432,6 +432,15 @@ img {
   background: url("../img/portfolio-bg.jpg") no-repeat;
   background-size: cover;
 }
+.section-portfolio img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.section-portfolio img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
 .section-portfolio .head-container {
   text-align: center;
 }
