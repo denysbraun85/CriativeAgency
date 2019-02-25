@@ -23,7 +23,7 @@ $('.cards').tilt({
 });
 
 /* Clock */
-$('#clock').countdown('2018/12/31', function (event) {
+$('#clock').countdown('2019/12/31', function (event) {
     $(this).html(event.strftime(''
         + '<div><span>%w</span><span>Weeks</span></div>'
         + '<div><span>%d</span><span>Days</span></div>'
